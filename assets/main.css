@@ -1,0 +1,91 @@
+body {
+  font-family: Georgia, serif;
+  background-color: lightyellow;
+  max-width: 1000px;
+  margin: 10vh auto;
+}
+
+ul{
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0 0 0;
+}
+
+li{
+	margin: 5px auto;
+}
+
+#button{
+	/*position: absolute;*/
+	width: 50px;
+	height: 50px;
+	/*right: 50px;*/
+	border-radius: 50px 50px;
+	background-color: #000000;
+	opacity: 0.75;
+	border: 2px solid white;
+}
+
+
+ 
+* {
+  box-sizing: border-box;
+}
+h1, p , h2{
+  margin: 0 0 1em 0;
+}
+h1 {font-size: 150%;}
+h2, h3, h4 {text-align: center;}
+
+.footer {
+	font-size: 80%;
+
+}
+
+.wrapper {
+  max-width: 950px;
+  display: grid;
+  grid-gap: 10px;
+}
+
+
+
+@media screen and (min-width: 500px) {
+  .sidebar {
+    float: left;
+    /*width: 20%;*/
+  }
+  .content {
+    float: right;
+    grid-column: 2/4;
+    /*width: 80%;*/
+    border: 1px solid black;
+  }
+  .wrapper {
+    margin: 0 auto;
+    grid-template-columns: 1.25fr 6fr;
+  }
+  .header, .footer {
+    grid-column: 1 / 3;
+    clear: both;
+  }
+
+  .sideright {
+  	grid-column: 3 / 4;
+  }
+}
+.wrapper > * {
+
+  /*border: 1px solid black;*/
+  padding: 20px;
+ 
+
+  margin-bottom: 10px;
+}
+
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}  
