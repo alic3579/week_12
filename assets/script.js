@@ -1,5 +1,5 @@
-var counter = "0";
-console.log(counter)
+var counter = 0;
+// console.log(counter)
 
 
 var saveUserInfo = function(){
@@ -22,7 +22,13 @@ var saveUserInfo = function(){
 
 
   if(localStorage.getItem('counter')){ 
-    var counter = parseInt(localStorage.getItem('counter'));
+    // console.log(localStorage.getItem('counter'))
+    if (localStorage.getItem('counter') === "NaN") {
+      counter = 0;
+    } else {
+      counter = parseInt(localStorage.getItem('counter'));
+    }
+    console.log(counter)
   }
 
 
@@ -75,8 +81,8 @@ var saveUserInfo = function(){
     }
 
 
-
-    localStorage.setItem('counter', counter);
+    var n = counter.toString();
+    localStorage.setItem('counter', n);
 
    
 
@@ -89,6 +95,8 @@ var saveUserInfo = function(){
 
 /////////////////////////////////////////////
 
+// For the pages:
+
 var pageCounter = "0";
 console.log("page" + pageCounter)
 
@@ -100,14 +108,19 @@ var ch3 = document.getElementById("ch3");
 
 document.getElementById("c1").addEventListener('click', function(){
 
-  home.style.display = `none`;
-  ch1.style.display = `block`;
-  ch2.style.display = `none`;
-  ch3.style.display = `none`;
+  
 
   pageCounter = "1";
   console.log("page" + pageCounter)
   localStorage.setItem('pageCounter', pageCounter); 
+
+  if (pageCounter == 1) {
+
+    home.style.display = `none`;
+  ch1.style.display = `block`;
+  ch2.style.display = `none`;
+  ch3.style.display = `none`;
+  }
 
 
 })
@@ -139,8 +152,25 @@ ch3.style.display = `none`;
 
 ///////////////
 
+//Try again:
 
+// var allList = document.querySelectorAll("li");
+
+// allList.forEach(function(thisList){
+
+//   thisList.addEventListener("click", function(){
+
+//     allList.forEach(function())
+
+
+//   })
+
+// })
+
+
+
+
+///////////////
 }
-
 
 saveUserInfo(); // run saving user info

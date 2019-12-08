@@ -1,6 +1,10 @@
+/*.hidden{
+	display: none;
+}*/
+
 body {
   font-family: Georgia, serif;
-  background-color: lightyellow;
+  background-color: black;
   max-width: 1000px;
   margin: 10vh auto;
 }
