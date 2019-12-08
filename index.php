@@ -33,16 +33,19 @@
 <p>First Published: Macmillan Cambridge University Press, for Royal Economic Society in 1936;
 <p>Transcribed for M.I.A., corrected and formatted by Andy Blunden;
 <p>This Edition: marxists.org 2002.
+<p>Text Source: <a href="https://www.marxists.org/reference/subject/economics/keynes/general-theory/">Marxists.org</a></p>
   	</div>
-    <div id="ch1" style="display: none;">
-    	<?php include_once("chap1.php"); ?>
+
+     <div id="ch1" style="display: none;">
+      <?php include_once("chap1.php"); ?>
     </div>
     <div id="ch2" style="display: none;">
-    	<?php include_once("chap2.php"); ?>
+      <?php include_once("chap2.php"); ?>
     </div>
     <div id="ch3" style="display: none;">
-    	<?php include_once("chap3.php"); ?>
+      <?php include_once("chap3.php"); ?>
     </div>
+
   </article>
   <footer class="footer">Website by Alicia Pan</footer>
 </div>

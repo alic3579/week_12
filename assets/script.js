@@ -152,7 +152,7 @@ ch3.style.display = `none`;
 
 ///////////////
 
-//Try again:
+//Try again but didnt work:
 
 // var allList = document.querySelectorAll("li");
 
